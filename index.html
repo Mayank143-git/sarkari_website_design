@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>SarkariResult.com</title>
+<style>
+      .box1
+      {
+          display:flex;
+          width: 100%;
+      }
+      h5
+      {
+        margin-left: 40px;
+        font-size: 20px;
+        font-weight: bold;
+
+      }
+      ul 
+      {
+        list-style: none;
+        font-size: 13px;
+        
+      }
+      li 
+      {
+         margin-top:10px;
+      }
+      .two
+      {
+        margin-top:76px;
+      }
+    *{
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .outer
+    {
+        height: 1200px;
+        width: 1000px;
+        margin: 0px auto;
+    }
+    .header
+    {
+        height: 180px;
+        width: 1000px;
+        background: #AB183D;
+    } 
+    .logo
+    {   
+        height: 180px;
+        width: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        float: left;
+    }
+    .title
+    {
+        height: 180px;
+        width: 820px;
+        float: right;
+        text-align: center;
+        color: white;
+    }
+    .title .heading
+    {
+        padding-top: 40px;
+        font-size: 42px;
+        font-weight: 700;
+        margin: 0;
+    }
+    .title .sub_heading
+    {
+        font-weight: 700;
+        margin: 0;
+        padding-top: 0;
+    } 
+    .navbar
+    {
+        height: 50px;
+        width: 1000px;
+        background: black;
+        line-height: 50px;
+    }
+    .navbar ul
+    {
+      margin:0;
+      padding: 0;
+    }
+    .navbar ul li
+    {
+        list-style: none;
+        display: inline-block;
+        height: 50px;
+        width: 121px;
+        text-align: center;
+        border-right: 1px solid white;
+    }
+    .navbar ul li a
+    {
+        color: white;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .text
+    {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: x-small;
+        font-weight: bold;
+    }
+    .latest_news
+    {
+        height: 25px;
+        width: 1000px;
+        text-align: center;
+        line-height: 25px;
+    }
+    .latest_news a
+    {
+         font-weight: bold;
+         color: #004b91;
+    }
+    .join_us
+    {
+        height: 50px;
+        width: 1000px;
+        text-align: center;
+        line-height: 50px;
+    }
+    .join_us a{
+        background-color: #0000a0;
+        color: white;
+        font-weight: bold;
+        padding: 10px;
+    }
+    .online
+    {
+        height: 60px;
+        width: 1000px;
+    }
+    .box
+    {
+        height: 56px;
+        width: 246px;
+        margin: 2px;
+        float: left;
+        text-align: center;
+        font-size: 20px;
+    }
+    .online .box a
+    {
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+    }
+    .container
+    {
+        min-height: 500px;
+        height: auto;
+        width: 1000px;
+    }
+    .card
+    {
+        min-height: 250px;
+        height: auto;
+        width: 300px;
+        border: 2px solid red;
+        float: left;
+        margin: 14px;
+    }
+    .card-header
+    {
+        height: 40px;
+        width: 100%;
+        text-align:center;
+        line-height: 40px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 22px;
+        background: #ab183d;
+    }
+    .card-body
+    {
+        height: 210px;
+        width: 100%;
+    }
+    .card-body ul li
+    {
+        height: 30px;
+    }
+    .job
+    {
+        min-height: 250px;
+        height: auto;
+        width: 1000px;
+        border: 2px solid red;
+        float: left;
+        margin-top: 50px;
+    }
+    .job_header
+    {
+        height: 40px;
+        width: 100%;
+        text-align:center;
+        line-height: 40px;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 25px;
+        background: #ab183d;
+    }
+    .job_body
+    {   
+         text-align: center;
+         margin-top: 20px;
+    }
+    .job_body p
+    {
+        padding: 15px;
+        margin: 0;
+    }
+    .links
+    { 
+        min-height: 250px;
+        height: auto;
+        width: 1000px;
+        float: left;
+        margin-top: 60px;
+        margin-left: 15px;
+        display: flex;
+    }
+    .links_header
+    {
+        height: 40px;
+        width: 100%;
+        text-align:left;
+        line-height: 40px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .links_body ul li
+    {
+        text-align: left;
+        margin-top: 13px;
+        font-size: 13px;
+        list-style: none;
+        margin-left: -40px;
+    }
+    .links_body a
+    {
+        color: black;
+    }
+    a{
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+    }
+</style>
+</head>
+<body>
+    <div class="outer">
+        <div class="header">
+            <div class="logo">
+                <img src="https://www.sarkariresult.com/images/logo-new.png" alt>
+             </div>
+             <div class="title">
+                <p class="heading">SARKARI RESULT</p>
+                <p class="sub_heading">WWW.SARKARIRESULT.COM</p>
+             </div>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Latest Jobs</a></li>
+                <li><a href="#">Results</a></li>
+                <li><a href="#">Admit Card</a></li>
+                <li><a href="#">Answer Key</a></li>
+                <li><a href="#">Syllabus</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    <div align="center">
+        <div class="text">
+            <font size="-2">
+                <b>
+                    <h1>
+                        Sarkari Result : SarkariResult.Com Sarkari Naukri Latest Jobs Online Form at Sarkari Results 2024 
+                    </h1>
+                </b>
+                <b>
+                    <h2>
+                        <span style="color: red;">
+                            <strong>Welcome to No.1 Education Portal Sarkari Result 2024</strong>
+                            <strong>
+                                <span style="color: green;"></span>
+                            </strong>
+                        </span>
+                    </h2>
+                </b>
+            </font>
+           </div>
+        </div>
+        <div class="latest_news">
+                 <a href="#">Sarkari Result Android Apps</a
+                    >||
+                <a href="#">Sarkari Result Youtube Channel</a
+                    >||
+                    <a href="#">Sarkari Result Apple / IOS Apps</a
+                        >||
+                  <a href="#">Follow Instagram
+                   </a>
+        </div>
+        <div class="latest_news">
+            <marquee behavior="alternate" onmouseover="stop()" onmouseout="start()">
+           <a href="#">NTA JEEMAIN Session||Online Form 2024</a
+            >||
+           <a href="#">CTET January 2024 Answer Key.</a
+            >||
+           <a href="#">NTA JEEMAIN Session | Answer Key 2024
+           </a>
+            </marquee>
+        </div>
+        <div class="latest_news">
+            <marquee behavior="alternate" onmouseover="stop()" onmouseout="start()">
+           <a href="#">UPPSC RO / ARO Admit Card 2024</a
+            >||
+           <a href="#">UPSSSC PET 2023 Certificate</a
+            >||
+           <a href="#">Bihar DELED 2024 Online Form
+           </a>
+            </marquee>
+        </div>
+        <div class="latest_news">
+            <marquee behavior="alternate" onmouseover="stop()" onmouseout="start()">
+           <a href="#">RPSC Senior Teacher Online Form 2024</a
+            >||
+           <a href="#">UKPSC Sub Inspector Online Form 2024</a
+            >||
+           <a href="#">JPSC Pre Online form 2024
+           </a>
+            </marquee>
+        </div>
+        <div class="join_us">
+            <a href="#">Sarkari Result Tools</a>
+        </div>
+        <div class="online">
+            <div class="box" style="background: #868A08;">
+             <a href="#">DSSSB Various Post Apply Online</a>
+            </div>
+            <div class="box" style="background: #0404B4;">
+              <a href="#">JSSC Constable 2024 Apply Online </a>
+            </div>
+            <div class="box" style="background: #FB5E03;">
+                <a href="#">Chandigarh JBT 2024 Apply Online</a>
+              </div>
+              <div class="box" style="background: #8C0101;">
+                <a href="#">RRB ALP 2024 Apply Online </a>
+              </div>
+        </div>
+        <div class="online">
+            <div class="box" style="background: #FB0303;">
+             <a href="#">UPPSC RO / ARO Admit Card</a>
+            </div>
+            <div class="box" style="background: #0B610B;">
+              <a href="#">UPBED 2024 Apply Online </a>
+            </div>
+            <div class="box" style="background: #FF00BF;">
+                <a href="#">BPSC School Teacher TRE 3.0 Apply Online</a>
+              </div>
+              <div class="box" style="background: #0080FF;">
+                <a href="#">NEET UG 2024 Apply Online </a>
+              </div>
+        </div>
+        <div class="container">
+               
+               <div class="card">
+                <div class="card-header">
+                    Result
+                </div>
+                <div class="card-body">
+                       <ul>
+                        <li><a href="#">DFCCIL Varios Post 2023 Result</a></li>
+                        <li><a href="#">NTA EPFO SSA 2023 Score Card</a></li>
+                        <li><a href="#">Patna High Court steno 2023</a></li>
+                        <li><a href="#">SSC Stenographer 2023 Result</a></li>
+                        <li><a href="#">BLW Railway Apprentices 2023</a></li>
+                        <li><a href="#">BPSSC Sub Inspector SI Result</a></li>
+                        <li><a href="#">CRPF Various Paramedical Post</a></li>                                                      
+                       </ul>
+                </div>
+               </div>
+               <div class="card">
+                <div class="card-header">
+                    Admit Card
+                </div>
+                <div class="card-body">
+                       <ul>
+                        <li><a href="#">DFCCIL Varios Post 2023 Result</a></li>
+                        <li><a href="#">NTA EPFO SSA 2023 Score Card</a></li>
+                        <li><a href="#">Patna High Court steno 2023</a></li>
+                        <li><a href="#">SSC Stenographer 2023 Result</a></li>
+                        <li><a href="#">BLW Railway Apprentices 2023</a></li>
+                        <li><a href="#">BPSSC Sub Inspector SI Result</a></li>
+                        <li><a href="#">CRPF Various Paramedical Post</a></li>
+                       </ul>
+                </div>
+               </div>
+               <div class="card">
+                <div class="card-header">
+                    Latest Jobs
+                </div>
+                <div class="card-body">
+                       <ul>
+                        <li><a href="#">DFCCIL Varios Post 2023 Result</a></li>
+                        <li><a href="#">NTA EPFO SSA 2023 Score Card</a></li>
+                        <li><a href="#">Patna High Court steno 2023</a></li>
+                        <li><a href="#">SSC Stenographer 2023 Result</a></li>
+                        <li><a href="#">BLW Railway Apprentices 2023</a></li>
+                        <li><a href="#">BPSSC Sub Inspector SI Result</a></li>
+                        <li><a href="#">CRPF Various Paramedical Post</a></li>
+                       </ul>
+                </div>
+               </div>
+               <div class="card">
+                <div class="card-header">
+                    Answer Key
+                </div>
+                <div class="card-body">
+                       <ul>
+                        <li><a href="#">DFCCIL Varios Post 2023 Result</a></li>
+                        <li><a href="#">NTA EPFO SSA 2023 Score Card</a></li>
+                        <li><a href="#">Patna High Court steno 2023</a></li>
+                        <li><a href="#">SSC Stenographer 2023 Result</a></li>
+                        <li><a href="#">BLW Railway Apprentices 2023</a></li>
+                        <li><a href="#">BPSSC Sub Inspector SI Result</a></li>
+                        <li><a href="#">CRPF Various Paramedical Post</a></li>
+                       </ul>
+                </div>
+               </div>
+               <div class="card">
+                <div class="card-header">
+                    Syllabus
+                </div>
+                <div class="card-body">
+                       <ul>
+                        <li><a href="#">DFCCIL Varios Post 2023 Result</a></li>
+                        <li><a href="#">NTA EPFO SSA 2023 Score Card</a></li>
+                        <li><a href="#">Patna High Court steno 2023</a></li>
+                        <li><a href="#">SSC Stenographer 2023 Result</a></li>
+                        <li><a href="#">BLW Railway Apprentices 2023</a></li>
+                        <li><a href="#">BPSSC Sub Inspector SI Result</a></li>
+                        <li><a href="#">CRPF Various Paramedical Post</a></li>
+                       </ul>
+                </div>
+               </div>
+               <div class="card">
+                <div class="card-header">
+                    Admission
+                </div>
+                <div class="card-body">
+                       <ul>
+                        <li><a href="#">DFCCIL Varios Post 2023 Result</a></li>
+                        <li><a href="#">NTA EPFO SSA 2023 Score Card</a></li>
+                        <li><a href="#">Patna High Court steno 2023</a></li>
+                        <li><a href="#">SSC Stenographer 2023 Result</a></li>
+                        <li><a href="#">BLW Railway Apprentices 2023</a></li>
+                        <li><a href="#">BPSSC Sub Inspector SI Result</a></li>
+                        <li><a href="#">CRPF Various Paramedical Post</a></li>
+                       </ul>
+                </div>
+               </div>
+        </div>
+               <div class="job">
+                      <div class="job_header">
+                        Sarkari Result : Resources to Help Indians Get Government Jobs (Sarkari Job)
+                      </div>
+                      <div class="job_body">
+                        <p>The future is uncertain, but a government job, Sarkari Jobs can help you secure your future. Click for valuable resources and help from Sarkari Result.</p>
+                        <p>Did you know that over 1.5 million people lost their jobs in August 2021 in rural and urban India? Yes, the COVID-19 pandemic has hit the job market hard. Small businesses and multinationals alike have had to reconsider their staffing requirements.</p>
+                        <p>Are you an unemployed Indian citizen because of the pandemic and fluctuating job market?</p>
+                        <p>Are you working for a multinational company going through restructuring and considering your next steps?</p>
+                        <p>Are you a recent graduate looking to find your first job?</p>
+                        <p>Are you wondering if a government job is right for you?</p>
+                        <p>You've come to the right place! At Sarkari Result, we will show you the benefits of an Indian government job and help you to find a government job that's stable, long-term, and right for you!</p>
+                      </div>
+                      <div class="job_header">
+                        Why Should I Consider a Government Job?
+                      </div>
+                      <div class="job_body">
+                        <p>In India, a Sarkari Naukri (or an Indian government job) is highly sought-after. It's the ultimate career goal, offering long-term security, good benefits, and friendly co-workers.</p>
+                        <p>More than that, an Indian government job offers an opportunity to live a life of purpose.</p>
+                        <p>It's a way for you to give back to your community</p>
+                        <p>According to the Centre for Monitoring Indian Economy Pvt. Ltd. (CMIE), the unemployment rate in India increased from 6.5% in November 2020 to 7.75% in October 2021. In this fluctuating market, there has been an increase in the demand for the stability and permanence offered by a Sarkari Naukri.</p>
+                        <p>In addition, government jobs in India can be pretty lucrative offering competitive salaries, benefits, and pensions. Some of the highest-paid jobs in the Indian government include the Indian Administrative Services (IAS), Indian Foreign Services (IFS), and Indian Police Services (IPS).</p>
+                        <p>Keep in mind that these jobs are also highly competitive with a complex application process!</p>
+                      </div>
+                      <div class="job_header">
+                        What Kind of Government Jobs Can I Get?
+                      </div>
+                      <div class="job_body">
+                        <p>In India, a Sarkari Naukri (or an Indian government job) is highly sought-after. It's the ultimate career goal, offering long-term security, good benefits, and friendly co-workers.</p>
+                        <p>More than that, an Indian government job offers an opportunity to live a life of purpose.</p>
+                        <p>It's a way for you to give back to your community</p>
+                        <p>According to the Centre for Monitoring Indian Economy Pvt. Ltd. (CMIE), the unemployment rate in India increased from 6.5% in November 2020 to 7.75% in October 2021. In this fluctuating market, there has been an increase in the demand for the stability and permanence offered by a Sarkari Naukri.</p>
+                        <p>In addition, government jobs in India can be pretty lucrative offering competitive salaries, benefits, and pensions. Some of the highest-paid jobs in the Indian government include the Indian Administrative Services (IAS), Indian Foreign Services (IFS), and Indian Police Services (IPS).</p>
+                        <p>Keep in mind that these jobs are also highly competitive with a complex application process!</p>
+                      </div>
+                      <div class="job_header">
+                        With All the Competition, How Can I Get a Job Working in the Government?
+                      </div>
+                      <div class="job_body">
+                        <p>In India, a Sarkari Naukri (or an Indian government job) is highly sought-after. It's the ultimate career goal, offering long-term security, good benefits, and friendly co-workers.</p>
+                        <p>More than that, an Indian government job offers an opportunity to live a life of purpose.</p>
+                        <p>It's a way for you to give back to your community</p>
+                        <p>According to the Centre for Monitoring Indian Economy Pvt. Ltd. (CMIE), the unemployment rate in India increased from 6.5% in November 2020 to 7.75% in October 2021. In this fluctuating market, there has been an increase in the demand for the stability and permanence offered by a Sarkari Naukri.</p>
+                        <p>In addition, government jobs in India can be pretty lucrative offering competitive salaries, benefits, and pensions. Some of the highest-paid jobs in the Indian government include the Indian Administrative Services (IAS), Indian Foreign Services (IFS), and Indian Police Services (IPS).</p>
+                        <p>Keep in mind that these jobs are also highly competitive with a complex application process!</p>
+                      </div>
+               </div>
+
+                 
+
+
+               <div class="box1">
+ 
+                      <div class="one">
+                         <h5> Quick Links</h5>
+                         <ul>
+                            <li>Sarkari Result@Twitter</li>
+                            <li>Sarkari Result@Telegram</li>
+                            <li>Sarkari Result@WhatsApp</li>
+                            <li>Sarkari Result@Instagram</li>
+                            <li>Sarkari Result@Koo</li>
+                            <li>Sarkari Result@Facebook</li>
+                            <li>Sarkari Result@Linkedin</li>
+                            <li>Sarkari Result@Youtube</li>
+                            <li>All Board Exams</li>
+                            <li>Sarkari Result Contact Us </li>
+                            <li>Privacy Policy</li>
+                         </ul>
+                      </div>
+                      <div class="one">
+                            <h5>Apps</h5>
+                            <ul>
+                                <li>Android App</li>
+                                <li>Apple IOS App</li>
+                            </ul>
+                      </div>
+                      <div class="one">
+                          <h5>More</h5>
+                          <ul>
+                            <li>BPSC</li>
+                            <li>UP-scholorship</li>
+                            <li>UPSC</li>
+                            <li>RPSC</li>
+                            <li>UPPSC</li>
+                            <li>Coast Guard</li>
+                          </ul>
+                      </div>
+                      <div class="two">
+                        <ul>
+                          <li>UPSSSC</li>
+                          <li>IBPS</li>
+                          <li>Air Force</li>
+                          <li>Delhi DSSB</li>
+                          <li>HSSC</li>
+                          <li>Police Vacancy</li>
+                        </ul>
+                    </div>
+                    <div class="two">
+                        <ul>
+                          <li>CCC</li>
+                          <li>SSC</li>
+                          <li>Navy</li>
+                          <li>Railway</li>
+                          <li>TET</li>
+                        </ul>
+                    </div>
+               </div>
+         
+    </div>
+
+
+</body>
+</html>
